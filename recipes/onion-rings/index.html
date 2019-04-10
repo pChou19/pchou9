@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135887741-1"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-135887741-1');
+   </script>
+   <meta name="author" content="Patrick Chou">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Recipe for falafel crusted onion rings">
+   <title>Falafel Onion Rings</title>
+   <link href="../css/recipe.css" rel="stylesheet">
+   <script src="../../standalone.js" type="text/javascript"></script>
+   <link href="../../css/Average+Sans.css" rel="stylesheet">
+</head>
+<body ng-app="">
+   <div class="header">
+      <h1 style="color: white">Falafel Onion Rings</h1>
+   </div>
+   <div style="overflow:auto">
+      <div class="main">
+         <div class="image">
+            <img src="onion-rings.jpg" style="max-width:100%" alt="Vegatarian falafel crusted onion-rings">
+         </div>
+         <div class="content">
+            <div class="recipe">
+            <h2>Preheat oven @ 450&deg;F</h2>
+            <h2>Mix in bowl:</h2>
+            <ul>
+               <li>2 eggs</li>
+               <li>1/4 cup mayonnaise</li>
+               <li>Garlic powder</li>
+               <li>Cumin</li>
+            </ul>
+            <h2>Separate bowl:</h2>
+            <ul>
+               <li>Knorr Falafel Mix</li>
+            </ul>
+            <h3>Toss onion rings in flour. Dip in wet mixture then falafel mix. Bake on oiled sheet for ~8 minutes.</h3>
+            </div>
+         </div>
+         <div class="menu">
+          	<div ng-include="'https://pchou9.com/recipes/includes/menu.html'"></div>
+         </div>
+         <div class="imagef">
+            <img src="onion-rings.jpg" style="max-width:100%" alt="Vegatarian falafel crusted onion-rings">
+         </div>
+      </div>
+   </div>
+   <div ng-include="'https://pchou9.com/recipes/includes/footer.html'"></div>
+</body>
+</html>
