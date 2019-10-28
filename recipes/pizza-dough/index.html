@@ -2,22 +2,23 @@
 <html lang="en">
 
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135887741-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135887741-1"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-		gtag('config', 'UA-135887741-1');
-	</script>
-	<meta name="author" content="Patrick Chou">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Recipe for pizza dough">
-	<title>Pizza Dough</title>
-	<link href="../css/recipe.css" rel="stylesheet">
-	<script src="../../standalone.js" type="text/javascript"></script>
-	<link href="../../css/Average+Sans.css" rel="stylesheet">
+      gtag('config', 'UA-135887741-1');
+   </script>
+   <meta name="author" content="Patrick Chou">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Recipe for pizza dough">
+   <title>Pizza Dough</title>
+   <link href="../css/recipe.css" rel="stylesheet">
+   <script src="../../standalone.js" type="text/javascript"></script>
+   <link href="../../css/Average+Sans.css" rel="stylesheet">
+   <script>$(function(){$("#menu").load("../../includes/menu.html"); $("#footer").load("../../includes/footer.html"); });</script>
 </head>
 
 <body ng-app="">
@@ -44,12 +45,10 @@
 					<h3>Put in bread machine in that order, program 12 (T-fal Actibread). Adjust water as needed. Divide in half to make 2 servings. Best used after refrigerated for a few days.</h3>
 				</div>
 			</div>
-			<div class="menu">
-				<div ng-include="'https://pchou9.com/recipes/includes/menu.html'"></div>
-			</div>
+			<div class="menu" id="menu"/>
 		</div>
 	</div>
-	<div ng-include="'https://pchou9.com/recipes/includes/footer.html'"></div>
+	<div id="footer"/>
 </body>
 
 </html>
