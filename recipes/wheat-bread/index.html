@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135887741-1"></script>
-   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-135887741-1');
-   </script>
-   <meta name="author" content="Patrick Chou">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="Recipe for bread machine wheat bread">
-   <title>Wheat Bread</title>
-   <link href="../css/recipe.css" rel="stylesheet">
-   <script src="../../standalone.js" type="text/javascript"></script>
-   <link href="../../css/Average+Sans.css" rel="stylesheet">
-   <script>$(function(){$("#menu").load("../../includes/menu.html"); $("#footer").load("../../includes/footer.html"); });</script>
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135887741-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-135887741-1');
+    </script>
+    <meta name="author" content="Patrick Chou">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipe for bread machine wheat bread">
+    <title>Wheat Bread</title>
+    <link href="../css/recipe.css" rel="stylesheet">
+    <script src="../../standalone.js" type="text/javascript"></script>
+    <link href="../../css/Average+Sans.css" rel="stylesheet">
+    <script>
+        $(function() {
+            $("#menu").load("../../includes/menu.html");
+            $("#footer").load("../../includes/footer.html");
+        });
+    </script>
 </head>
 
 <body ng-app="">
-	<div class="header">
-		<h1>Wheat Bread</h1>
-	</div>
-	<div style="overflow:auto">
-		<div class="main">
-			<div class="image">
+    <div class="header">
+        <h1>Wheat Bread</h1>
+    </div>
+    <div style="overflow:auto">
+        <div class="main">
+            <div class="image">
                 <img src="wheat-bread.jpg" style="max-width:100%" alt="Wheat bread on cutting board with bread pan">
-			</div>
-			<div class="content">
-				<div class="recipe">
-					<h2>For 1 1/2 lb loaf:</h2>
-					<ul>
-						<li>300g water (1 1/2 cups)</li>
+            </div>
+            <div class="content">
+                <div class="recipe">
+                    <h2>For 1 1/2 lb loaf:</h2>
+                    <ul>
+                        <li>300g water (1 1/2 cups)</li>
                         <li>100g ripe sourdough starter (optional)</li>
-						<li>13g olive oil (1 tablespoon)</li>
-						<li>20g honey or sugar (1 tablespoon)</li>
-						<li>8g salt (1 teaspoon)</li>
-						<li>200g whole wheat flour (1 1/2 cups)</li>
-						<li>200g bread flour (1 1/2 cups)</li>
-						<li>20g vital wheat gluten (2 tablespoons) (optional)</li>
-						<li>7g yeast (2 teaspoons)</li>
-					</ul>
-                    <h3>Mix till smooth dough is formed, adjusting water or flour as needed. Proof for an hour, then punch down and knead dough to fit a loaf pan. Proof another 40 minutes. Bake on lowest rack for ~10 minutes at 400&deg;F, then lower to 350&deg;F and bake ~30 minutes.</h3>
-					<h3>If using in bread machine (T-fal Actibread), place ingredients in that order, then run program 5 adjusting water or flour as needed during mixing until a smooth dough is formed.</h3>
-				</div>
+                        <li>13g olive oil (1 tablespoon)</li>
+                        <li>20g honey or sugar (1 tablespoon)</li>
+                        <li>7g yeast (2 teaspoons)</li>
+                        <li>200g whole wheat flour (1 1/2 cups)</li>
+                        <li>200g AP or bread flour (1 1/2 cups)</li>
+                        <li>20g vital wheat gluten (2 tablespoons) (optional)</li>
+                        <li>8g salt (1 teaspoon)</li>
+                    </ul>
+                    <h3>Mix till smooth dough is formed, adjusting water or flour as needed. Proof for an hour, then punch down and knead dough to fit a loaf pan. Proof another 40 minutes. Bake on lowest rack for ~10 minutes at 400&deg;F, then lower to 350&deg;F
+                        and bake ~30 minutes.</h3>
+                    <h3>If using in bread machine (T-fal Actibread), place ingredients in that order, then run program 5 adjusting water or flour as needed during mixing until a smooth dough is formed.</h3>
+                </div>
                 <div class="imagef">
                     <img src="wheat-bread.jpg" style="max-width:100%" alt="Wheat bread on cutting board with bread pan">
                 </div>
-			</div>
-			<div class="menu" id="menu"/>
-		</div>
-	</div>
-	<div id="footer"/>
+            </div>
+            <div class="menu" id="menu" />
+        </div>
+    </div>
+    <div id="footer" />
 </body>
 
 </html>
