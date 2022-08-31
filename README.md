@@ -1,6 +1,6 @@
-# pchou9vue
+# pchou9.com
 
-This template should help get you started developing with Vue 3 in Vite.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/167eb6b8-ce66-4883-bb41-82571bb39075/deploy-status)](https://app.netlify.com/sites/pchou9/deploys)
 
 ## Recommended IDE Setup
 
