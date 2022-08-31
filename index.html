@@ -1,47 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135887741-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'UA-135887741-1');
-	</script>
-	<meta name="author" content="Patrick Chou">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Homepage for Patrick Chou">
-	<title>Patrick Chou</title>
-	<link href="/css/main.css" rel="stylesheet">
-	<link href="/css/Average+Sans.css" rel="stylesheet">
-    <script>$(function(){$("#footer").load("includes/footer.html"); });</script>
-</head>
-
-<body>
-	<div class="header">
-		<h1>Patrick Chou</h1>
-	</div>
-	<div style="overflow:auto">
-		<div class="main">
-			<div class="content">
-				<h2>Software Developer <br>
-					Washington, DC <br>
-					<a href="https://ist.psu.edu/" target="_blank" rel="noreferrer">IST</a> @ Penn State Alum</h2>
-				<img src="https://pchou9.com/images/mountain.png"
-					style="margin-left: auto; margin-right: auto; display: block;"
-					alt="Painted mountain with small building">
-				<br><br>
-				<div style="text-align: center">
-					<h3><a href="/recipes">Recipe Collection</a></h3>
-					<h3><a href="/about">About</a></h3>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="footer"></div>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patrick Chou</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
