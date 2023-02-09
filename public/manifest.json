@@ -10,13 +10,11 @@
     "shortcuts": [
         {
             "name": "Metro Schedule",
-            "short_name": "metro",
             "description": "Gets latest metro schedule",
             "url": "/metro"
         },
         {
             "name": "Recipe Collection",
-            "short_name": "recipe",
             "description": "Recipe collection",
             "url": "/recipe"
         }
