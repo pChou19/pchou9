@@ -4,6 +4,7 @@ import router from './router'
 
 import './assets/main.css'
 import './assets/Average+Sans.css'
+import './registerServiceWorker'
 
 router.beforeEach((to, from, next) => {
     if (to.matched.length < 1) {
