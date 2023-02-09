@@ -1,16 +1,26 @@
-// Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
+import fetch from 'node-fetch'
+
+const API_ENDPOINT = "https://cat-fact.herokuapp.com/facts"
+
 const handler = async (event) => {
+  let response
+
   try {
-    const subject = event.queryStringParameters.name || 'World'
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ message: `Hello ${subject}` }),
-      // // more keys you can return:
-      // headers: { "headerName": "headerValue", ... },
-      // isBase64Encoded: true,
-    }
+    response = await fetch(API_ENDPOINT, { headers: { 'api_key': 'test'}})
   } catch (error) {
-    return { statusCode: 500, body: error.toString() }
+    return {
+      statusCode: error.statusCode || 500,
+      body: JSON.stringify({
+        error: error.message
+      })
+    }
+  }
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify({
+      data: response
+    })
   }
 }
 
