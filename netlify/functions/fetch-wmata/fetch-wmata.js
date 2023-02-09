@@ -1,17 +1,17 @@
-import fetch from 'node-fetch'
+const fetch = require('node-fetch')
 
-const API_ENDPOINT = "https://cat-fact.herokuapp.com/facts"
+const API_ENDPOINT = 'https://cat-fact.herokuapp.com/facts'
 
-const handler = async (event) => {
+exports.handler = async (event, context) => {
   let response
-
   try {
-    response = await fetch(API_ENDPOINT, { headers: { 'api_key': 'test'}})
-  } catch (error) {
+    response = await fetch(API_ENDPOINT)
+    // handle response
+  } catch (err) {
     return {
-      statusCode: error.statusCode || 500,
+      statusCode: err.statusCode || 500,
       body: JSON.stringify({
-        error: error.message
+        error: err.message
       })
     }
   }
@@ -23,5 +23,3 @@ const handler = async (event) => {
     })
   }
 }
-
-module.exports = { handler }
