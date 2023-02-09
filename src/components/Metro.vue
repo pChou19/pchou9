@@ -136,7 +136,7 @@ export default {
             return Promise.reject(error);
           }
 
-          schedule = data;
+          schedule = data.data;
         })
         .catch(error => {
           this.errorMessage = error;
