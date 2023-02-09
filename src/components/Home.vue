@@ -22,6 +22,7 @@ export default {
         <br><br>
         <div style="text-align: center">
           <h3><a href="/recipes">Recipe Collection</a></h3>
+          <h3><a href="/metro">Metro Schedule</a></h3>
           <h3><a href="/about">About</a></h3>
         </div>
       </div>
