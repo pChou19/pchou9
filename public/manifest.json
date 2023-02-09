@@ -7,6 +7,20 @@
     "app_name": "pchou9",
     "short_name": "pchou9",
     "description": "Patrick Chou's website",
+    "shortcuets": [
+        {
+            "name": "Metro Schedule",
+            "short_name": "metro",
+            "description": "Gets latest metro schedule",
+            "url": "/metro"
+        },
+        {
+            "name": "Recipe Collection",
+            "short_name": "recipe",
+            "description": "Recipe collection",
+            "url": "/recipe"
+        }
+    ],
     "icons": [
         {
             "src": "/img/icons/icon-48.png",
@@ -29,13 +43,13 @@
             "type": "image/png"
         },
         {
-            "src": "/img/icons/icon-512x512.png",
-            "sizes": "168x168",
+            "src": "/img/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/img/icons/android-chrome-192x192.png",
-            "sizes": "192x192",
+            "src": "/img/icons/icon-512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ]

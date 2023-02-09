@@ -40,7 +40,7 @@ export default {
     },
   },
   mounted() {
-    document.title = "WMATA Schedule";
+    document.title = "Metro Schedule";
     this.timer = setInterval(() => {
       this.fetchData()
     }, 10000);
