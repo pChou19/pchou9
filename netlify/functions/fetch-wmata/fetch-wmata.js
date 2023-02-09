@@ -7,6 +7,7 @@ exports.handler = async (event, context) => {
     .then((response) => response.json())
     .then((data) => ({
       statusCode: 200,
+      headers: { "Content-Type": "application/json; charset=utf-8"},
       body: JSON.stringify({data}),
     }))
     .catch((error) => ({ statusCode: 422, body: String(error) }));
