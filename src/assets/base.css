@@ -16,7 +16,7 @@ h1 {
 
 h4 {
     margin: .2em;
-    font-size: 1.5em;
+    font-size: 1.3em
 }
 
 .content,
@@ -121,8 +121,8 @@ a {
     line-height: 5.4em
 }
 
-.footer::after,
-.footer::before {
+.footer:after,
+.footer:before {
     content: " ";
     position: absolute;
     width: 50%;
@@ -130,8 +130,8 @@ a {
     z-index: -10
 }
 
-.shadow::after,
-.shadow::before {
+.shadow:after,
+.shadow:before {
     bottom: 0;
     width: 400px;
     height: 50px;
@@ -139,17 +139,17 @@ a {
     box-shadow: 0 0 40px rgba(0, 0, 0, .4)
 }
 
-.shadow::before {
+.shadow:before {
     left: 5%
 }
 
-.shadow::after {
+.shadow:after {
     right: 5%
 }
 
 .fname {
     margin-top: 6px;
-    padding-bottom: 20px;
+    padding-bottom: 20px
 }
 
 .image {
@@ -166,25 +166,83 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    width: 600px;
+    width: 600px
 }
 
-.wmata-content {
+.metro-content {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    width: auto;
+    width: auto
 }
 
-.wmata-list {
+.metro-trains {
+    display: inline-block;
+    text-align: left;
+    width: auto
+}
+
+.metro-select {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    border: 1px solid #ffc039;
+    border-radius: 4px;
+    background-color: #29435c;
+    color: #d1d4c9;
+    font-size: .9em
+}
+
+.metro-btn {
+    border-radius: .25rem;
+    border: 1px solid transparent;
+    padding: .375rem;
+    margin: 3px;
+    width: 64px;
+    text-align: center
+}
+
+.btn-green {
+    color: #d5d5d5;
+    background-color: #28a745;
+    border-color: #28a745
+}
+
+.btn-red {
+    color: #d5d5d5;
+    background-color: #dc3545;
+    border-color: #dc3545
+}
+
+.btn-blue {
+    color: #d5d5d5;
+    background-color: #007bff;
+    border-color: #007bff
+}
+
+.btn-silver {
+    color: #45494e;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa
+}
+
+.btn-orange {
+    color: #45494e;
+    background-color: #ffc107;
+    border-color: #ffc107
+}
+
+.metro-list {
     list-style-type: none;
     padding: 0;
-    margin: 8px;
+    margin: 8px
 }
 
 .content {
-    width: 55%;
+    width: 55%
 }
 
 @media only screen and (max-width:620px) {
@@ -198,7 +256,7 @@ a {
     }
 
     .recipe {
-        margin-bottom: 20px;
+        margin-bottom: 20px
     }
 
     .image {
@@ -219,7 +277,7 @@ a {
 }
 
 @media only screen and (max-width:900px) {
-    .shadow::before {
+    .shadow:before {
         bottom: 0;
         width: 90%;
         height: 50px;
@@ -227,7 +285,7 @@ a {
         box-shadow: 0 0 50px rgba(0, 0, 0, .4)
     }
 
-    .shadow::after {
+    .shadow:after {
         display: none
     }
 }
@@ -259,7 +317,6 @@ a {
         font-size: 1.5em
     }
 }
-
 
 @media (prefers-color-scheme:dark) {
     html {
