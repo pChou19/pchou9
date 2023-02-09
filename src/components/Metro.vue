@@ -102,26 +102,41 @@ export default {
   },
   methods: {
     async checkStation() {
-      this.stationName = null;
-      this.scheduleGrn = null;
-      this.scheduleRd = null;
-      this.scheduleOr = null;
-      this.scheduleBl = null;
+      let clearGr = true;
+      let clearRd = true;
+      let clearOr = true;
+      let clearBl = true;
       if (this.stations.get(this.station).has(this.GREEN)) {
         this.scheduleGrn = await this.fetchData(this.station, this.GREEN);
         this.stationName = this.scheduleGrn.Trains[0].LocationName;
+        clearGr = false;
       }
       if (this.stations.get(this.station).has(this.RED)) {
         this.scheduleRd = await this.fetchData(this.station, this.RED);
         this.stationName = this.scheduleRd.Trains[0].LocationName;
+        clearRd = false;
       }
       if (this.stations.get(this.station).has(this.ORANGE)) {
         this.scheduleOr = await this.fetchData(this.station, this.ORANGE);
         this.stationName = this.scheduleOr.Trains[0].LocationName;
+        clearOr = false;
       }
       if (this.stations.get(this.station).has(this.BLUE)) {
         this.scheduleBl = await this.fetchData(this.station, this.BLUE);
         this.stationName = this.scheduleBl.Trains[0].LocationName;
+        clearBl = false;
+      }
+      if (clearGr) {
+        this.scheduleGrn = null;
+      }
+      if (clearRd) {
+        this.scheduleRd = null;
+      }
+      if (clearOr) {
+        this.scheduleOr = null;
+      }
+      if (clearBl) {
+        this.scheduleBl = null;
       }
     },
     async fetchData(currStation, line) {
