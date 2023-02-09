@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router"
 
 import Home from './components/Home.vue'
 import About from './components/About.vue'
-import Metro from './components/Metro.vue'
+import WMATA from './components/WMATA.vue'
 import Recipes from './components/recipes/Recipes.vue'
 import Basics from './components/recipes/Basics.vue'
 import Coleslaw from './components/recipes/Coleslaw.vue'
@@ -33,8 +33,8 @@ export default createRouter({
             component: About
         },
         {
-            path:'/metro',
-            component: Metro
+            path:'/wmata',
+            component: WMATA
         },
         {
             path:'/recipes',
