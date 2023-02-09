@@ -3,10 +3,10 @@
     "background_color": "#152a38",
     "display": "fullscreen",
     "scope": "/",
-    "start_url": "/",
-    "app_name": "pchou9",
-    "short_name": "pchou9",
-    "description": "Patrick Chou's website",
+    "start_url": "/recipes",
+    "app_name": "Recipes",
+    "short_name": "recipes",
+    "description": "Recipe Collection",
     "icons": [
         {
             "src": "/img/icons/icon-48.png",
@@ -29,13 +29,13 @@
             "type": "image/png"
         },
         {
-            "src": "/img/icons/icon-512x512.png",
-            "sizes": "168x168",
+            "src": "/img/icons/icon-192.png",
+            "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/img/icons/android-chrome-192x192.png",
-            "sizes": "192x192",
+            "src": "/img/icons/icon-512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ]

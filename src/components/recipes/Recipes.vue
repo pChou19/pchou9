@@ -7,6 +7,7 @@ export default {
 </script>
 
 <template>
+  <link rel="manifest" href="manifest-recipes.json" />
   <div class="header">
     <h1>Recipe Collection</h1>
   </div>

@@ -40,7 +40,7 @@ export default {
     },
   },
   mounted() {
-    document.title = "WMATA Schedule";
+    document.title = "Metro Schedule";
     this.timer = setInterval(() => {
       this.fetchData()
     }, 10000);
@@ -52,6 +52,7 @@ export default {
 </script>
 
 <template>
+  <link rel="manifest" href="manifest-metro.json" />
   <div class="header">
   </div>
   <div style="overflow:auto">
