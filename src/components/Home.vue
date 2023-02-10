@@ -13,18 +13,13 @@ export default {
   <div style="overflow:auto">
     <div class="main">
       <div class="home-content">
-        <h2>Software Developer <br>
-          Washington, DC <br>
-          <a href="https://ist.psu.edu/" target="_blank" rel="noreferrer">IST</a> @ Penn State Alum
-        </h2>
+        <div style="text-align: center">
+          <h2><a href="/recipes">Recipe Collection</a></h2>
+          <h2><a href="/metro">Metro Schedule</a></h2>
+          <h2><a href="/about">About</a></h2>
+        </div>
         <img src="../assets/mountain.png" style="margin-left: auto; margin-right: auto; display: block;"
           alt="Painted mountain with small building">
-        <br><br>
-        <div style="text-align: center">
-          <h3><a href="/recipes">Recipe Collection</a></h3>
-          <h3><a href="/metro">Metro Schedule</a></h3>
-          <h3><a href="/about">About</a></h3>
-        </div>
       </div>
     </div>
   </div>
