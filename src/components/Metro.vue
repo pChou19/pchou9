@@ -17,9 +17,9 @@ export default {
       ["CoHi", new Map([["GR", "E04"]])],
       ["USt", new Map([["GR", "E03"]])],
       ["Shaw", new Map([["GR", "E02"]])],
-      ["MtVernon", new Map([["GR", "F02"]])],
+      ["MtVernon", new Map([["GR", "E01"]])],
       ["USt", new Map([["GR", "E03"]])],
-      ["Archives", new Map([["GR", "E01"]])],
+      ["Archives", new Map([["GR", "F02"]])],
       ["L'Enfant", new Map([["GR", "F03"], ["OR", "D03"]])],
       ["Chinatown", new Map([["GR", "F01"], ["RD", "B01"]])],
       ["Metro", new Map([["RD", "A01"], ["OR", "C01"]])],
@@ -72,7 +72,27 @@ export default {
       ["SouthernAve", new Map([["GR", "F08"]])],
       ["Naylor", new Map([["GR", "F09"]])],
       ["Suitland", new Map([["GR", "F10"]])],
-      ["Branch", new Map([["GR", "F11"]])]
+      ["Branch", new Map([["GR", "F11"]])],
+      ["Vienna", new Map([["OR", "K07"]])],
+      ["Dunn", new Map([["OR", "K07"]])],
+      ["WFalls", new Map([["OR", "K06"]])],
+      ["EFalls", new Map([["OR", "K05"]])],
+      ["Ballston", new Map([["OR", "K04"]])],
+      ["VirginiaSq", new Map([["OR", "K03"]])],
+      ["Clarendon", new Map([["OR", "K02"]])],
+      ["Court", new Map([["OR", "K01"]])],
+      ["FederalT", new Map([["OR", "D01"]])],
+      ["Smithsonian", new Map([["OR", "D02"]])],
+      ["FederalC", new Map([["OR", "D04"]])],
+      ["CapitolS", new Map([["OR", "D05"]])],
+      ["EMarket", new Map([["OR", "D06"]])],
+      ["PotomacAve", new Map([["OR", "D07"]])],
+      ["Stadium", new Map([["OR", "D08"]])],
+      ["MinnesotaAve", new Map([["OR", "D09"]])],
+      ["Deanwood", new Map([["OR", "D10"]])],
+      ["Cheverly", new Map([["OR", "D11"]])],
+      ["Landover", new Map([["OR", "D12"]])],
+      ["Carrollton", new Map([["OR", "D13"]])],
     ]),
     GRNBELT: "1",
     BRNCH: "2",
@@ -324,32 +344,32 @@ export default {
           <option value="Glenmont">Glenmont</option>
         </select>
         <select v-if="selectedLine == ORANGE" v-model="station" class="metro-select" size="10">
-          <option value="">Vienna</option>
-          <option value="">Dunn Loring</option>
-          <option value="">West Falls Church</option>
-          <option value="">East Falls Church</option>
-          <option value="">Ballston</option>
-          <option value="">Virginia Sq</option>
-          <option value="">Clarendon</option>
-          <option value="">Court House</option>
+          <option value="Vienna">Vienna</option>
+          <option value="Dunn">Dunn Loring</option>
+          <option value="WFalls">West Falls Church</option>
+          <option value="EFalls">East Falls Church</option>
+          <option value="Ballston">Ballston</option>
+          <option value="VirginiaSq">Virginia Sq</option>
+          <option value="Clarendon">Clarendon</option>
+          <option value="Court">Court House</option>
           <option value="Rosslyn">Rosslyn</option>
           <option value="Foggy">Foggy Bottom</option>
           <option value="FWest">Farragut West</option>
           <option value="McPherson">McPherson Sq</option>
           <option value="Metro">Metro Center</option>
-          <option value="">Federal Triangle</option>
-          <option value="">Smithsonian</option>
+          <option value="FederalT">Federal Triangle</option>
+          <option value="Smithsonian">Smithsonian</option>
           <option value="L'Enfant">L'Enfant Plaza</option>
-          <option value="">Federal Center</option>
-          <option value="">Capitol South</option>
-          <option value="">Eastern Market</option>
-          <option value="">Potomac Ave</option>
-          <option value="">Stadium-Armory</option>
-          <option value="">Minnesota Ave</option>
-          <option value="">Deanwood</option>
-          <option value="">Vheverly</option>
-          <option value="">Landover</option>
-          <option value="">New Carrollton</option>
+          <option value="FederalC">Federal Center</option>
+          <option value="CapitolS">Capitol South</option>
+          <option value="EMarket">Eastern Market</option>
+          <option value="PotomacAve">Potomac Ave</option>
+          <option value="Stadium">Stadium-Armory</option>
+          <option value="MinnesotaAve">Minnesota Ave</option>
+          <option value="Deanwood">Deanwood</option>
+          <option value="Cheverly">Cheverly</option>
+          <option value="Landover">Landover</option>
+          <option value="Carrollton">New Carrollton</option>
         </select>
         <select v-if="selectedLine == SILVER" v-model="station" class="metro-select" size="10">
           <option value="">Ashburn</option>
@@ -363,24 +383,24 @@ export default {
           <option value="">Greensboro</option>
           <option value="">Tysons</option>
           <option value="">McLean</option>
-          <option value="">East Falls Church</option>
-          <option value="">Ballston</option>
-          <option value="">Virginia Sq</option>
-          <option value="">Clarendon</option>
-          <option value="">Court House</option>
+          <option value="EFalls">East Falls Church</option>
+          <option value="Ballston">Ballston</option>
+          <option value="VirginiaSq">Virginia Sq</option>
+          <option value="Clarendon">Clarendon</option>
+          <option value="Court">Court House</option>
           <option value="Rosslyn">Rosslyn</option>
           <option value="Foggy">Foggy Bottom</option>
           <option value="FWest">Farragut West</option>
           <option value="McPherson">McPherson Sq</option>
           <option value="Metro">Metro Center</option>
-          <option value="">Federal Triangle</option>
-          <option value="">Smithsonian</option>
-          <option value="">L'Enfant Plaza</option>
-          <option value="">Federal Center</option>
-          <option value="">Capitol South</option>
-          <option value="">Eastern Market</option>
-          <option value="">Potomac Ave</option>
-          <option value="">Stadium-Armory</option>
+          <option value="FederalT">Federal Triangle</option>
+          <option value="Smithsonian">Smithsonian</option>
+          <option value="L'Enfant">L'Enfant Plaza</option>
+          <option value="FederalC">Federal Center</option>
+          <option value="CapitolS">Capitol South</option>
+          <option value="EMarket">Eastern Market</option>
+          <option value="PotomacAve">Potomac Ave</option>
+          <option value="Stadium">Stadium-Armory</option>
           <option value="">Benning Rd</option>
           <option value="">Capitol Heights</option>
           <option value="">Addison Rd</option>
@@ -402,14 +422,14 @@ export default {
           <option value="FWest">Farragut West</option>
           <option value="McPherson">McPherson Sq</option>
           <option value="Metro">Metro Center</option>
-          <option value="">Federal Triangle</option>
-          <option value="">Smithsonian</option>
-          <option value="">L'Enfant Plaza</option>
-          <option value="">Federal Center</option>
-          <option value="">Capitol South</option>
-          <option value="">Eastern Market</option>
-          <option value="">Potomac Ave</option>
-          <option value="">Stadium-Armory</option>
+          <option value="FederalT">Federal Triangle</option>
+          <option value="Smithsonian">Smithsonian</option>
+          <option value="L'Enfant">L'Enfant Plaza</option>
+          <option value="FederalC">Federal Center</option>
+          <option value="CapitolS">Capitol South</option>
+          <option value="EMarket">Eastern Market</option>
+          <option value="PotomacAve">Potomac Ave</option>
+          <option value="Stadium">Stadium-Armory</option>
           <option value="">Benning Rd</option>
           <option value="">Capitol Heights</option>
           <option value="">Addison Rd</option>
