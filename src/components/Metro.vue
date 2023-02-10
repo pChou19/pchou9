@@ -391,7 +391,7 @@ export default {
           <button @click="changeLine(SILVER)" class="metro-btn" :class="{'btn-silver-active': selectedLine == SILVER, 'btn-silver': selectedLine != SILVER}">Silver</button>
           <button @click="changeLine(BLUE)" class="metro-btn" :class="{'btn-blue-active': selectedLine == BLUE, 'btn-blue': selectedLine != BLUE}">Blue</button>
         </div>
-        <object data="../assets/map.pdf" class="metro-map"></object>
+        <object data="map.pdf" class="metro-map"></object>
       </div>
     </div>
   </div>
