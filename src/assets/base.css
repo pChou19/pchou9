@@ -208,9 +208,8 @@ a {
 
 .metro-map {
     width: 100%;
-    min-height: 435px;
+    max-width: 1000px;
     margin-top: 15px;
-    background-color: #d1d4c9;
 }
 
 .btn-green-active {
