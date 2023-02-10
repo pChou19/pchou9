@@ -202,36 +202,62 @@ a {
     padding: .375rem;
     margin: 3px;
     width: 64px;
+    background-color: transparent;
     text-align: center
 }
 
-.btn-green {
+.btn-green-active {
     color: #d5d5d5;
     background-color: #28a745;
     border-color: #28a745
 }
 
-.btn-red {
+.btn-red-active {
     color: #d5d5d5;
     background-color: #dc3545;
     border-color: #dc3545
 }
 
-.btn-blue {
+.btn-blue-active {
     color: #d5d5d5;
     background-color: #007bff;
     border-color: #007bff
 }
 
-.btn-silver {
+.btn-silver-active {
     color: #45494e;
     background-color: #f8f9fa;
     border-color: #f8f9fa
 }
 
-.btn-orange {
+.btn-orange-active {
     color: #45494e;
     background-color: #ffc107;
+    border-color: #ffc107
+}
+
+.btn-green {
+    color: #198754;
+    border-color: #198754
+}
+
+.btn-red {
+    color: #dc3545;
+    border-color: #dc3545
+}
+
+.btn-blue {
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-silver {
+    color: #6c757d;
+    border-color: #6c757d
+}
+
+.btn-orange {
+    color: #ffc107;
     border-color: #ffc107
 }
 

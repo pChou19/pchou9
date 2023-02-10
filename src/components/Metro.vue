@@ -73,7 +73,7 @@ export default {
       ["Naylor", new Map([["GR", "F09"]])],
       ["Suitland", new Map([["GR", "F10"]])],
       ["Branch", new Map([["GR", "F11"]])],
-      ["Vienna", new Map([["OR", "K07"]])],
+      ["Vienna", new Map([["OR", "K08"]])],
       ["Dunn", new Map([["OR", "K07"]])],
       ["WFalls", new Map([["OR", "K06"]])],
       ["EFalls", new Map([["OR", "K05"]])],
@@ -436,11 +436,11 @@ export default {
           <option value="">Morgan Blvd</option>
           <option value="">Downtown Largo</option>
         </select>
-        <button @click="changeLine(GREEN)" class="metro-btn btn-green">Green</button>
-        <button @click="changeLine(RED)" class="metro-btn btn-red" >Red</button>
-        <button @click="changeLine(ORANGE)" class="metro-btn btn-orange" >Orange</button>
-        <button @click="changeLine(SILVER)" class="metro-btn btn-silver" >Silver</button>
-        <button @click="changeLine(BLUE)" class="metro-btn btn-blue" >Blue</button>
+        <button @click="changeLine(GREEN)" class="metro-btn" :class="{'btn-green-active': selectedLine == GREEN, 'btn-green': selectedLine != GREEN}">Green</button>
+        <button @click="changeLine(RED)" class="metro-btn" :class="{'btn-red-active': selectedLine == RED, 'btn-red': selectedLine != RED}">Red</button>
+        <button @click="changeLine(ORANGE)" class="metro-btn" :class="{'btn-orange-active': selectedLine == ORANGE, 'btn-orange': selectedLine != ORANGE}">Orange</button>
+        <button @click="changeLine(SILVER)" class="metro-btn" :class="{'btn-silver-active': selectedLine == SILVER, 'btn-silver': selectedLine != SILVER}">Silver</button>
+        <button @click="changeLine(BLUE)" class="metro-btn" :class="{'btn-blue-active': selectedLine == BLUE, 'btn-blue': selectedLine != BLUE}">Blue</button>
       </div>
     </div>
   </div>
