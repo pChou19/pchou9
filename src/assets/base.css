@@ -206,6 +206,12 @@ a {
     text-align: center
 }
 
+.metro-map {
+    width: 100%;
+    min-height: 435px;
+    padding-top: 15px;
+}
+
 .btn-green-active {
     color: #d5d5d5;
     background-color: #28a745;

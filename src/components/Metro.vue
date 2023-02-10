@@ -384,11 +384,14 @@ export default {
           <option value="Morgan">Morgan Blvd</option>
           <option value="Largo">Downtown Largo</option>
         </select>
-        <button @click="changeLine(GREEN)" class="metro-btn" :class="{'btn-green-active': selectedLine == GREEN, 'btn-green': selectedLine != GREEN}">Green</button>
-        <button @click="changeLine(RED)" class="metro-btn" :class="{'btn-red-active': selectedLine == RED, 'btn-red': selectedLine != RED}">Red</button>
-        <button @click="changeLine(ORANGE)" class="metro-btn" :class="{'btn-orange-active': selectedLine == ORANGE, 'btn-orange': selectedLine != ORANGE}">Orange</button>
-        <button @click="changeLine(SILVER)" class="metro-btn" :class="{'btn-silver-active': selectedLine == SILVER, 'btn-silver': selectedLine != SILVER}">Silver</button>
-        <button @click="changeLine(BLUE)" class="metro-btn" :class="{'btn-blue-active': selectedLine == BLUE, 'btn-blue': selectedLine != BLUE}">Blue</button>
+        <div>
+          <button @click="changeLine(GREEN)" class="metro-btn" :class="{'btn-green-active': selectedLine == GREEN, 'btn-green': selectedLine != GREEN}">Green</button>
+          <button @click="changeLine(RED)" class="metro-btn" :class="{'btn-red-active': selectedLine == RED, 'btn-red': selectedLine != RED}">Red</button>
+          <button @click="changeLine(ORANGE)" class="metro-btn" :class="{'btn-orange-active': selectedLine == ORANGE, 'btn-orange': selectedLine != ORANGE}">Orange</button>
+          <button @click="changeLine(SILVER)" class="metro-btn" :class="{'btn-silver-active': selectedLine == SILVER, 'btn-silver': selectedLine != SILVER}">Silver</button>
+          <button @click="changeLine(BLUE)" class="metro-btn" :class="{'btn-blue-active': selectedLine == BLUE, 'btn-blue': selectedLine != BLUE}">Blue</button>
+        </div>
+        <object data="../assets/map.pdf" class="metro-map"></object>
       </div>
     </div>
   </div>
