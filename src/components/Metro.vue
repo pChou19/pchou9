@@ -8,92 +8,10 @@ export default {
     scheduleRd: null,
     scheduleOr: null,
     scheduleBl: null,
+    scheduleSl: null,
     errorMessage: null,
     selectedLine: "GR",
     station: "Shaw",
-    stations: new Map([
-      ["FortT", new Map([["GR", "E06"], ["RD", "B06"]])],
-      ["Petworth", new Map([["GR", "E05"]])],
-      ["CoHi", new Map([["GR", "E04"]])],
-      ["USt", new Map([["GR", "E03"]])],
-      ["Shaw", new Map([["GR", "E02"]])],
-      ["MtVernon", new Map([["GR", "E01"]])],
-      ["USt", new Map([["GR", "E03"]])],
-      ["Archives", new Map([["GR", "F02"]])],
-      ["L'Enfant", new Map([["GR", "F03"], ["OR", "D03"]])],
-      ["Chinatown", new Map([["GR", "F01"], ["RD", "B01"]])],
-      ["Metro", new Map([["RD", "A01"], ["OR", "C01"]])],
-      ["FNorth", new Map([["RD", "A02"]])],
-      ["Dupont", new Map([["RD", "A03"]])],
-      ["Woodely", new Map([["RD", "A04"]])],
-      ["Cleveland", new Map([["RD", "A05"]])],
-      ["VanNess", new Map([["RD", "A06"]])],
-      ["Tenleytown", new Map([["RD", "A07"]])],
-      ["Friendship", new Map([["RD", "A08"]])],
-      ["Bethesda", new Map([["RD", "A09"]])],
-      ["Medical", new Map([["RD", "A10"]])],
-      ["Grosvenor", new Map([["RD", "A11"]])],
-      ["NBethesda", new Map([["RD", "A12"]])],
-      ["Twinbrook", new Map([["RD", "A13"]])],
-      ["Rockville", new Map([["RD", "A14"]])],
-      ["ShadyGrove", new Map([["RD", "A15"]])],
-      ["Judiciary", new Map([["RD", "B02"]])],
-      ["Union", new Map([["RD", "B03"]])],
-      ["RhodeIsland", new Map([["RD", "B04"]])],
-      ["Brookland", new Map([["RD", "B05"]])],
-      ["Takoma", new Map([["RD", "B07"]])],
-      ["SilverSpring", new Map([["RD", "B08"]])],
-      ["Forest", new Map([["RD", "B09"]])],
-      ["Wheaton", new Map([["RD", "B10"]])],
-      ["Glenmont", new Map([["RD", "B11"]])],
-      ["Woodley", new Map([["RD", "A04"]])],
-      ["NoMa", new Map([["RD", "B35"]])],
-      ["McPherson", new Map([["OR", "C02"]])],
-      ["FWest", new Map([["OR", "C03"]])],
-      ["Foggy", new Map([["OR", "C04"]])],
-      ["Rosslyn", new Map([["OR", "C05"]])],
-      ["Arlington", new Map([["BL", "C06"]])],
-      ["Pentagon", new Map([["BL", "C07"]])],
-      ["PentagonCity", new Map([["BL", "C08"]])],
-      ["CrystalCity", new Map([["BL", "C09"]])],
-      ["DCA", new Map([["BL", "C10"]])],
-      ["Braddock", new Map([["BL", "C12"]])],
-      ["KingSt", new Map([["BL", "C13"]])],
-      ["VanDorn", new Map([["BL", "J02"]])],
-      ["Franconia", new Map([["BL", "J03"]])],
-      ["Greenbelt", new Map([["GR", "E10"]])],
-      ["College", new Map([["GR", "E09"]])],
-      ["HyattsvilleC", new Map([["GR", "E08"]])],
-      ["WHyattsville", new Map([["GR", "E07"]])],
-      ["Waterfront", new Map([["GR", "F04"]])],
-      ["NavyYard", new Map([["GR", "F05"]])],
-      ["Anacostia", new Map([["GR", "F06"]])],
-      ["Congress", new Map([["GR", "F07"]])],
-      ["SouthernAve", new Map([["GR", "F08"]])],
-      ["Naylor", new Map([["GR", "F09"]])],
-      ["Suitland", new Map([["GR", "F10"]])],
-      ["Branch", new Map([["GR", "F11"]])],
-      ["Vienna", new Map([["OR", "K08"]])],
-      ["Dunn", new Map([["OR", "K07"]])],
-      ["WFalls", new Map([["OR", "K06"]])],
-      ["EFalls", new Map([["OR", "K05"]])],
-      ["Ballston", new Map([["OR", "K04"]])],
-      ["VirginiaSq", new Map([["OR", "K03"]])],
-      ["Clarendon", new Map([["OR", "K02"]])],
-      ["Court", new Map([["OR", "K01"]])],
-      ["FederalT", new Map([["OR", "D01"]])],
-      ["Smithsonian", new Map([["OR", "D02"]])],
-      ["FederalC", new Map([["OR", "D04"]])],
-      ["CapitolS", new Map([["OR", "D05"]])],
-      ["EMarket", new Map([["OR", "D06"]])],
-      ["PotomacAve", new Map([["OR", "D07"]])],
-      ["Stadium", new Map([["OR", "D08"]])],
-      ["MinnesotaAve", new Map([["OR", "D09"]])],
-      ["Deanwood", new Map([["OR", "D10"]])],
-      ["Cheverly", new Map([["OR", "D11"]])],
-      ["Landover", new Map([["OR", "D12"]])],
-      ["Carrollton", new Map([["OR", "D13"]])],
-    ]),
     GRNBELT: "1",
     BRNCH: "2",
     NEW_CARROL: "1",
@@ -101,6 +19,8 @@ export default {
     VIENNA: "2",
     SHADY: "2",
     GLENMONT: "1",
+    ASHBURN: "2",
+    LARGO: "1",
     GREEN: "GR",
     YELLOW: "YL",
     RED: "RD",
@@ -112,7 +32,8 @@ export default {
     FRANCONIA_STATION: "Franconia-Springfield",
     FRANCONIA_ABRV: "F. Springfield",
     LARG_STATION: "Downtown Largo",
-    LARG_ABRV: "Dtwn Largo"
+    LARG_ABRV: "Dtwn Largo",
+    stations: new Map([["FortT",new Map([["GR","E06"],["RD","B06"]])],["Petworth",new Map([["GR","E05"]])],["CoHi",new Map([["GR","E04"]])],["USt",new Map([["GR","E03"]])],["Shaw",new Map([["GR","E02"]])],["MtVernon",new Map([["GR","E01"]])],["USt",new Map([["GR","E03"]])],["Archives",new Map([["GR","F02"]])],["L'Enfant",new Map([["GR","F03"],["OR","D03"]])],["Chinatown",new Map([["GR","F01"],["RD","B01"]])],["Metro",new Map([["RD","A01"],["OR","C01"]])],["FNorth",new Map([["RD","A02"]])],["Dupont",new Map([["RD","A03"]])],["Woodely",new Map([["RD","A04"]])],["Cleveland",new Map([["RD","A05"]])],["VanNess",new Map([["RD","A06"]])],["Tenleytown",new Map([["RD","A07"]])],["Friendship",new Map([["RD","A08"]])],["Bethesda",new Map([["RD","A09"]])],["Medical",new Map([["RD","A10"]])],["Grosvenor",new Map([["RD","A11"]])],["NBethesda",new Map([["RD","A12"]])],["Twinbrook",new Map([["RD","A13"]])],["Rockville",new Map([["RD","A14"]])],["ShadyGrove",new Map([["RD","A15"]])],["Judiciary",new Map([["RD","B02"]])],["Union",new Map([["RD","B03"]])],["RhodeIsland",new Map([["RD","B04"]])],["Brookland",new Map([["RD","B05"]])],["Takoma",new Map([["RD","B07"]])],["SilverSpring",new Map([["RD","B08"]])],["Forest",new Map([["RD","B09"]])],["Wheaton",new Map([["RD","B10"]])],["Glenmont",new Map([["RD","B11"]])],["Woodley",new Map([["RD","A04"]])],["NoMa",new Map([["RD","B35"]])],["McPherson",new Map([["OR","C02"]])],["FWest",new Map([["OR","C03"]])],["Foggy",new Map([["OR","C04"]])],["Rosslyn",new Map([["OR","C05"]])],["Arlington",new Map([["BL","C06"]])],["Pentagon",new Map([["BL","C07"]])],["PentagonCity",new Map([["BL","C08"]])],["CrystalCity",new Map([["BL","C09"]])],["DCA",new Map([["BL","C10"]])],["Braddock",new Map([["BL","C12"]])],["KingSt",new Map([["BL","C13"]])],["VanDorn",new Map([["BL","J02"]])],["Franconia",new Map([["BL","J03"]])],["Greenbelt",new Map([["GR","E10"]])],["College",new Map([["GR","E09"]])],["HyattsvilleC",new Map([["GR","E08"]])],["WHyattsville",new Map([["GR","E07"]])],["Waterfront",new Map([["GR","F04"]])],["NavyYard",new Map([["GR","F05"]])],["Anacostia",new Map([["GR","F06"]])],["Congress",new Map([["GR","F07"]])],["SouthernAve",new Map([["GR","F08"]])],["Naylor",new Map([["GR","F09"]])],["Suitland",new Map([["GR","F10"]])],["Branch",new Map([["GR","F11"]])],["Vienna",new Map([["OR","K08"]])],["Dunn",new Map([["OR","K07"]])],["WFalls",new Map([["OR","K06"]])],["EFalls",new Map([["OR","K05"]])],["Ballston",new Map([["OR","K04"]])],["VirginiaSq",new Map([["OR","K03"]])],["Clarendon",new Map([["OR","K02"]])],["Court",new Map([["OR","K01"]])],["FederalT",new Map([["OR","D01"]])],["Smithsonian",new Map([["OR","D02"]])],["FederalC",new Map([["OR","D04"]])],["CapitolS",new Map([["OR","D05"]])],["EMarket",new Map([["OR","D06"]])],["PotomacAve",new Map([["OR","D07"]])],["Stadium",new Map([["OR","D08"]])],["MinnesotaAve",new Map([["OR","D09"]])],["Deanwood",new Map([["OR","D10"]])],["Cheverly",new Map([["OR","D11"]])],["Landover",new Map([["OR","D12"]])],["Carrollton",new Map([["OR","D13"]])],["Ashburn",new Map([["SV","N12"]])],["Loudoun",new Map([["SV","N11"]])],["Dulles",new Map([["SV","N10"]])],["Innovation",new Map([["SV","N09"]])],["Herndon",new Map([["SV","N08"]])],["Reston",new Map([["SV","N07"]])],["Wiehle",new Map([["SV","N06"]])],["SpringHill",new Map([["SV","N04"]])],["Greensboro",new Map([["SV","N03"]])],["Tysons",new Map([["SV","N02"]])],["McLean",new Map([["SV","N01"]])],["Benning",new Map([["BL","G01"]])],["CapitolH",new Map([["BL","G02"]])],["Addison",new Map([["BL","G03"]])],["Morgan",new Map([["BL","G04"]])],["Largo",new Map([["BL","G05"]])]]),
   }),
   created() {
     this.checkStation()
@@ -126,6 +47,7 @@ export default {
       let clearRd = true;
       let clearOr = true;
       let clearBl = true;
+      let clearSl = true;
       if (this.stations.get(this.station).has(this.GREEN)) {
         this.scheduleGrn = await this.fetchData(this.station, this.GREEN);
         this.stationName = this.scheduleGrn.Trains[0].LocationName;
@@ -146,6 +68,11 @@ export default {
         this.stationName = this.scheduleBl.Trains[0].LocationName;
         clearBl = false;
       }
+      if (this.stations.get(this.station).has(this.SILVER)) {
+        this.scheduleSl = await this.fetchData(this.station, this.SILVER);
+        this.stationName = this.scheduleSl.Trains[0].LocationName;
+        clearSl = false;
+      }
       if (clearGr) {
         this.scheduleGrn = null;
       }
@@ -157,6 +84,9 @@ export default {
       }
       if (clearBl) {
         this.scheduleBl = null;
+      }
+      if (clearSl) {
+        this.scheduleSl = null;
       }
     },
     async fetchData(currStation, line) {
@@ -275,9 +205,9 @@ export default {
           </ul>
         </div>
         <div v-if="scheduleBl" class="metro-trains">
-          <h4>N. Carrollton ➡️</h4>
+          <h4>Largo ➡️</h4>
           <ul class="metro-list">
-            <li v-for="(train, index) in scheduleBl.Trains.filter(station => NEW_CARROL == station.Group)">
+            <li v-for="(train, index) in scheduleBl.Trains.filter(station => LARGO == station.Group)">
               <div v-if="train.Line == BLUE" style="display: inline">🔵</div>
               {{ abbreviate(train.DestinationName) }}
               {{ train.Min }}
@@ -287,6 +217,24 @@ export default {
           <ul class="metro-list">
             <li v-for="(train, index) in scheduleBl.Trains.filter(station => FRANCONIA == station.Group)">
               <div v-if="train.Line == BLUE" style="display: inline">🔵</div>
+              {{ abbreviate(train.DestinationName) }}
+              {{ train.Min }}
+            </li>
+          </ul>
+        </div>
+        <div v-if="scheduleSl" class="metro-trains">
+          <h4>Ashburn ⬅️</h4>
+          <ul class="metro-list">
+            <li v-for="(train, index) in scheduleSl.Trains.filter(station => ASHBURN == station.Group)">
+              <div v-if="train.Line == SILVER" style="display: inline">⚪</div>
+              {{ abbreviate(train.DestinationName) }}
+              {{ train.Min }}
+            </li>
+          </ul>
+          <h4>Largo ➡️</h4>
+          <ul class="metro-list">
+            <li v-for="(train, index) in scheduleSl.Trains.filter(station => LARGO == station.Group)">
+              <div v-if="train.Line == SILVER" style="display: inline">⚪</div>
               {{ abbreviate(train.DestinationName) }}
               {{ train.Min }}
             </li>
@@ -372,17 +320,17 @@ export default {
           <option value="Carrollton">New Carrollton</option>
         </select>
         <select v-if="selectedLine == SILVER" v-model="station" class="metro-select" size="10">
-          <option value="">Ashburn</option>
-          <option value="">Loudoun Gateway</option>
-          <option value="">Dulles</option>
-          <option value="">Innovation Center</option>
-          <option value="">Herndon</option>
-          <option value="">Reston</option>
-          <option value="">Wiehle</option>
-          <option value="">Spring Hill</option>
-          <option value="">Greensboro</option>
-          <option value="">Tysons</option>
-          <option value="">McLean</option>
+          <option value="Ashburn">Ashburn</option>
+          <option value="Loudoun">Loudoun Gateway</option>
+          <option value="Dulles">Dulles</option>
+          <option value="Innovation">Innovation Center</option>
+          <option value="Herndon">Herndon</option>
+          <option value="Reston">Reston</option>
+          <option value="Wiehle">Wiehle</option>
+          <option value="SpringHill">Spring Hill</option>
+          <option value="Greensboro">Greensboro</option>
+          <option value="Tysons">Tysons</option>
+          <option value="McLean">McLean</option>
           <option value="EFalls">East Falls Church</option>
           <option value="Ballston">Ballston</option>
           <option value="VirginiaSq">Virginia Sq</option>
@@ -401,11 +349,11 @@ export default {
           <option value="EMarket">Eastern Market</option>
           <option value="PotomacAve">Potomac Ave</option>
           <option value="Stadium">Stadium-Armory</option>
-          <option value="">Benning Rd</option>
-          <option value="">Capitol Heights</option>
-          <option value="">Addison Rd</option>
-          <option value="">Morgan Blvd</option>
-          <option value="">Downtown Largo</option>
+          <option value="Benning">Benning Rd</option>
+          <option value="CapitolH">Capitol Heights</option>
+          <option value="Addison">Addison Rd</option>
+          <option value="Morgan">Morgan Blvd</option>
+          <option value="Largo">Downtown Largo</option>
         </select>
         <select v-if="selectedLine == BLUE" v-model="station" class="metro-select" size="10">
           <option value="Franconia">Franconia-Springfield</option>
@@ -430,11 +378,11 @@ export default {
           <option value="EMarket">Eastern Market</option>
           <option value="PotomacAve">Potomac Ave</option>
           <option value="Stadium">Stadium-Armory</option>
-          <option value="">Benning Rd</option>
-          <option value="">Capitol Heights</option>
-          <option value="">Addison Rd</option>
-          <option value="">Morgan Blvd</option>
-          <option value="">Downtown Largo</option>
+          <option value="Benning">Benning Rd</option>
+          <option value="CapitolH">Capitol Heights</option>
+          <option value="Addison">Addison Rd</option>
+          <option value="Morgan">Morgan Blvd</option>
+          <option value="Largo">Downtown Largo</option>
         </select>
         <button @click="changeLine(GREEN)" class="metro-btn" :class="{'btn-green-active': selectedLine == GREEN, 'btn-green': selectedLine != GREEN}">Green</button>
         <button @click="changeLine(RED)" class="metro-btn" :class="{'btn-red-active': selectedLine == RED, 'btn-red': selectedLine != RED}">Red</button>
