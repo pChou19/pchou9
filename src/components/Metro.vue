@@ -213,6 +213,7 @@ export default {
           <ul class="metro-list">
             <li v-for="(train, index) in scheduleBl.Trains.filter(station => LARGO == station.Group)">
               <div v-if="train.Line == BLUE" style="display: inline">🔵</div>
+              <div v-if="train.Line == YELLOW" style="display: inline">🟡</div>
               {{ abbreviate(train.DestinationName) }}
               {{ train.Min }}
             </li>
@@ -221,6 +222,7 @@ export default {
           <ul class="metro-list">
             <li v-for="(train, index) in scheduleBl.Trains.filter(station => FRANCONIA == station.Group)">
               <div v-if="train.Line == BLUE" style="display: inline">🔵</div>
+              <div v-if="train.Line == YELLOW" style="display: inline">🟡</div>
               {{ abbreviate(train.DestinationName) }}
               {{ train.Min }}
             </li>
