@@ -154,7 +154,7 @@ export default {
             <li v-for="(train, index) in scheduleGrn.Trains.filter(station => GRNBELT == station.Group)">
               <div v-if="train.Line == GREEN" style="display: inline">🟢</div>
               <div v-if="train.Line == YELLOW" style="display: inline">🟡</div>
-              {{ train.DestinationName }}
+              {{ abbreviate(train.DestinationName) }}
               {{ train.Min }}
             </li>
           </ul>
@@ -163,7 +163,7 @@ export default {
             <li v-for="(train, index) in scheduleGrn.Trains.filter(station => BRNCH == station.Group)">
               <div v-if="train.Line == GREEN" style="display: inline">🟢</div>
               <div v-if="train.Line == YELLOW" style="display: inline">🟡</div>
-              {{ train.DestinationName }}
+              {{ abbreviate(train.DestinationName) }}
               {{ train.Min }}
             </li>
           </ul>
@@ -173,7 +173,7 @@ export default {
           <ul class="metro-list">
             <li v-for="(train, index) in scheduleRd.Trains.filter(station => SHADY == station.Group)">
               <div v-if="train.Line == RED" style="display: inline">🔴</div>
-              {{ train.DestinationName }}
+              {{ abbreviate(train.DestinationName) }}
               {{ train.Min }}
             </li>
           </ul>
@@ -181,7 +181,7 @@ export default {
           <ul class="metro-list">
             <li v-for="(train, index) in scheduleRd.Trains.filter(station => GLENMONT == station.Group)">
               <div v-if="train.Line == RED" style="display: inline">🔴</div>
-              {{ train.DestinationName }}
+              {{ abbreviate(train.DestinationName) }}
               {{ train.Min }}
             </li>
           </ul>
