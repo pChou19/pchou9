@@ -23,6 +23,7 @@ export default {
         </div>
         <div class="menu">
           <h3>Appetizers</h3>
+          <a href="/recipes/kimchi">Kimchi</a>
           <a href="/recipes/onion-rings">Falafel Onion Rings</a>
           <a href="/recipes/vegan-buffalo-dip">Vegan Buffalo Dip</a>
           <a href="/recipes/coleslaw">Coleslaw</a>

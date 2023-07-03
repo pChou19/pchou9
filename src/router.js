@@ -22,6 +22,7 @@ import VeggieStock from './components/recipes/VeggieStock.vue'
 import WheatBread from './components/recipes/WheatBread.vue'
 import OilRice from './components/recipes/OilRice.vue'
 import SesameCookies from './components/recipes/SesameCookies.vue'
+import Kimchi from './components/recipes/Kimchi.vue'
 
 export default createRouter({
     history: createWebHistory(),
@@ -113,6 +114,10 @@ export default createRouter({
         {
             path:'/recipes/black-sesame-cookies',
             component: SesameCookies
+        },
+        {
+            path:'/recipes/kimchi',
+            component: Kimchi
         }
     ]
 })
