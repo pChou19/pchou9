@@ -48,6 +48,9 @@ export default {
           </ul>
           <h3>Mix all ingredients together and store in mason jar or preferably a <a href="https://www.amazon.com/gp/product/B078WJGNXR">fermentation container</a>, pressing down to remove air bubbles. After a day store in fridge to continue fermenting.</h3>
         </div>
+        <div class="imagef">
+          <img src="../../assets/kimchi.jpg" style="max-width:100%" alt="Kimchi in mason jars">
+        </div>
       </div>
       <Menu></Menu>
     </div>
