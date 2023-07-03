@@ -19,6 +19,7 @@ export default {
           <a href="/recipes/seitan">Steamed Seitan</a>
           <a href="/recipes/one-pot-pasta">One Pot Pasta</a>
           <a href="/recipes/mascarpone-gnocchi">Lemon Mascarpone Gnocchi</a>
+          <a href="/recipes/glutinous-oil-rice">Glutinous Oil Rice</a>
         </div>
         <div class="menu">
           <h3>Appetizers</h3>
@@ -44,7 +45,8 @@ export default {
           <a href="/recipes/kombucha-bbq">Kombucha BBQ Sauce</a>
         </div>
         <div class="menu">
-          <h3></h3>
+          <h3>Dessert</h3>
+          <a href="/recipes/black-sesame-cookies">Black Sesame Cookies</a>
         </div>
         <div class="menu">
           <h3>Info</h3>

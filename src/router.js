@@ -20,6 +20,8 @@ import SourdoughFocaccia from './components/recipes/SourdoughFocaccia.vue'
 import VeganBuffaloDip from './components/recipes/VeganBuffaloDip.vue'
 import VeggieStock from './components/recipes/VeggieStock.vue'
 import WheatBread from './components/recipes/WheatBread.vue'
+import OilRice from './components/recipes/OilRice.vue'
+import SesameCookies from './components/recipes/SesameCookies.vue'
 
 export default createRouter({
     history: createWebHistory(),
@@ -103,6 +105,14 @@ export default createRouter({
         {
             path:'/recipes/wheat-bread',
             component: WheatBread
+        },
+        {
+            path:'/recipes/glutinous-oil-rice',
+            component: OilRice
+        },
+        {
+            path:'/recipes/black-sesame-cookies',
+            component: SesameCookies
         }
     ]
 })
