@@ -1,4 +1,4 @@
-const fetch = require("node-fetch");
+import fetch from "node-fetch"
 
 const API_KEY = process.env.WMATA_KEY
 const API_ENDPOINT = "https://api.wmata.com/StationPrediction.svc/json/GetPrediction/";
