@@ -1,22 +1,22 @@
 <script>
-import Menu from './Menu.vue'
+import Menu from "./Menu.vue";
 
 export default {
   mounted() {
     document.title = "Sauce Recipes";
   },
-  components: { Menu }
-}
+  components: { Menu },
+};
 </script>
 
 <template>
   <div class="header">
     <h1>Sauce Recipes</h1>
   </div>
-  <div style="overflow:auto">
+  <div style="overflow: auto">
     <div class="main">
       <div class="image">
-        <img src="" style="max-width:100%">
+        <img src="" style="max-width: 100%" />
       </div>
       <div class="content">
         <div class="recipe">
@@ -68,7 +68,7 @@ export default {
         </div>
       </div>
       <div class="imagef">
-        <img src="" style="max-width:100%">
+        <img src="" style="max-width: 100%" />
       </div>
       <Menu></Menu>
     </div>

@@ -1,22 +1,26 @@
 <script>
-import Menu from './Menu.vue'
+import Menu from "./Menu.vue";
 
 export default {
   mounted() {
     document.title = "Lemon Mascarpone Gnocchi";
   },
-  components: { Menu }
-}
+  components: { Menu },
+};
 </script>
 
 <template>
   <div class="header">
     <h1>Lemon Mascarpone Gnocchi</h1>
   </div>
-  <div style="overflow:auto">
+  <div style="overflow: auto">
     <div class="main">
       <div class="image">
-        <img src="../../assets/gnocchi.jpg" style="max-width:100%" alt="Lemon mascarpone gnocchi with sauce and parmesan">
+        <img
+          src="../../assets/gnocchi.jpg"
+          style="max-width: 100%"
+          alt="Lemon mascarpone gnocchi with sauce and parmesan"
+        />
       </div>
       <div class="content">
         <div class="recipe">
@@ -33,8 +37,8 @@ export default {
           <ul>
             <li>3/4 cup flour</li>
           </ul>
-          Use two spoons to form gnocchi and lighlty coat in flour. Use hands to roll into ball shape. Boil in salted
-          water till gnocchi float.
+          Use two spoons to form gnocchi and lighlty coat in flour. Use hands to
+          roll into ball shape. Boil in salted water till gnocchi float.
           <h2>Toss gnocchi in:</h2>
           <ul>
             <li>1 tablespoon butter</li>
@@ -46,7 +50,11 @@ export default {
           </ul>
         </div>
         <div class="imagef">
-          <img src="../../assets/gnocchi.jpg" style="max-width:100%" alt="Lemon mascarpone gnocchi with sauce and parmesan">
+          <img
+            src="../../assets/gnocchi.jpg"
+            style="max-width: 100%"
+            alt="Lemon mascarpone gnocchi with sauce and parmesan"
+          />
         </div>
       </div>
       <Menu></Menu>

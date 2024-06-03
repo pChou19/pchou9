@@ -1,23 +1,21 @@
 <script>
-import Menu from './Menu.vue'
+import Menu from "./Menu.vue";
 
 export default {
   mounted() {
     document.title = "Glutinous Oil Rice";
   },
-  components: { Menu }
-}
+  components: { Menu },
+};
 </script>
 
 <template>
   <div class="header">
     <h1>Glutinous Oil Rice</h1>
   </div>
-  <div style="overflow:auto">
+  <div style="overflow: auto">
     <div class="main">
-      <div class="image">
-
-      </div>
+      <div class="image"></div>
       <div class="content">
         <div class="recipe">
           <h2>In rice cooker:</h2>
@@ -32,7 +30,9 @@ export default {
           <h2>Cook:</h2>
           <ul>
             <li>Onion or shallots</li>
-            <li>6 sliced dried shiitake mushrooms (reconstituted in boiled water)</li>
+            <li>
+              6 sliced dried shiitake mushrooms (reconstituted in boiled water)
+            </li>
             <li>White pepper</li>
             <li>1 tablespoon sesame oil</li>
             <li>Soy sauce</li>

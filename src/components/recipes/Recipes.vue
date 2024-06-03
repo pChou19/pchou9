@@ -1,16 +1,16 @@
 <script>
 export default {
-  mounted() {  
-    document.title = "Recipes";  
-  }
-}
+  mounted() {
+    document.title = "Recipes";
+  },
+};
 </script>
 
 <template>
   <div class="header">
     <h1>Recipe Collection</h1>
   </div>
-  <div style="overflow:auto">
+  <div style="overflow: auto">
     <div class="main">
       <div class="topmenu">
         <div class="menu">
@@ -56,6 +56,6 @@ export default {
         </div>
       </div>
     </div>
-    <div class="break"><br><br></div>
+    <div class="break"><br /><br /></div>
   </div>
 </template>

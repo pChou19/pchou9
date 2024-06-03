@@ -1,22 +1,26 @@
 <script>
-import Menu from './Menu.vue'
+import Menu from "./Menu.vue";
 
 export default {
   mounted() {
     document.title = "One Pot Pasta";
   },
-  components: { Menu }
-}
+  components: { Menu },
+};
 </script>
 
 <template>
   <div class="header">
     <h1>One Pot Pasta</h1>
   </div>
-  <div style="overflow:auto">
+  <div style="overflow: auto">
     <div class="main">
       <div class="image">
-        <img src="../../assets/one-pot-pasta.jpg" style="max-width:100%" alt="Vegan one pot pasta">
+        <img
+          src="../../assets/one-pot-pasta.jpg"
+          style="max-width: 100%"
+          alt="Vegan one pot pasta"
+        />
       </div>
       <div class="content">
         <div class="recipe">
@@ -32,11 +36,18 @@ export default {
             <li>~4 cups stock (enough to cover pasta)</li>
             <li>S&P</li>
           </ul>
-          <h3>Cook onion, garlic, & tomato paste then add rest of the ingredients. Bring to boil then simmer till pasta
-            is cooked ~15 min. Garnish with basil and a dollop of ricotta.</h3>
+          <h3>
+            Cook onion, garlic, & tomato paste then add rest of the ingredients.
+            Bring to boil then simmer till pasta is cooked ~15 min. Garnish with
+            basil and a dollop of ricotta.
+          </h3>
         </div>
         <div class="imagef">
-          <img src="../../assets/one-pot-pasta.jpg" style="max-width:100%" alt="Vegan one pot pasta">
+          <img
+            src="../../assets/one-pot-pasta.jpg"
+            style="max-width: 100%"
+            alt="Vegan one pot pasta"
+          />
         </div>
       </div>
       <Menu></Menu>

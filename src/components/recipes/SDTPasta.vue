@@ -1,23 +1,26 @@
 <script>
-import Menu from './Menu.vue'
+import Menu from "./Menu.vue";
 
 export default {
   mounted() {
     document.title = "Sun-Dried Tomato Pasta Salad";
   },
-  components: { Menu }
-}
+  components: { Menu },
+};
 </script>
 
 <template>
   <div class="header">
     <h1>Sun-Dried Tomato Pasta Salad</h1>
   </div>
-  <div style="overflow:auto">
+  <div style="overflow: auto">
     <div class="main">
       <div class="image">
-        <img src="../../assets/sdt-pasta.jpg" style="max-width:100%"
-          alt="Pasta with tomatoes, black olives, and sun-dried tomato sauce">
+        <img
+          src="../../assets/sdt-pasta.jpg"
+          style="max-width: 100%"
+          alt="Pasta with tomatoes, black olives, and sun-dried tomato sauce"
+        />
       </div>
       <div class="content">
         <div class="recipe">
@@ -37,12 +40,17 @@ export default {
             <li>Basil</li>
             <li>Parmesan cheese</li>
           </ul>
-          <h3>Toss together (may not use all of the dressing) and I prefer serving chilled (run pasta under cold water).
+          <h3>
+            Toss together (may not use all of the dressing) and I prefer serving
+            chilled (run pasta under cold water).
           </h3>
         </div>
         <div class="imagef">
-          <img src="../../assets/sdt-pasta.jpg" style="max-width:100%"
-            alt="Pasta with tomatoes, black olives, and sun-dried tomato sauce">
+          <img
+            src="../../assets/sdt-pasta.jpg"
+            style="max-width: 100%"
+            alt="Pasta with tomatoes, black olives, and sun-dried tomato sauce"
+          />
         </div>
       </div>
       <Menu></Menu>

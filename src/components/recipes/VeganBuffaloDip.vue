@@ -1,23 +1,21 @@
 <script>
-import Menu from './Menu.vue'
+import Menu from "./Menu.vue";
 
 export default {
   mounted() {
     document.title = "Vegan Buffalo Dip";
   },
-  components: { Menu }
-}
+  components: { Menu },
+};
 </script>
 
 <template>
   <div class="header">
     <h1>Vegan Buffalo Dip</h1>
   </div>
-  <div style="overflow:auto">
+  <div style="overflow: auto">
     <div class="main">
-      <div class="image">
-
-      </div>
+      <div class="image"></div>
       <div class="content">
         <div class="recipe">
           <h2>Blend:</h2>
