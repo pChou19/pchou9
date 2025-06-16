@@ -41,12 +41,14 @@ export default {
       <div class="topmenu">
         <div class="menu">
           <h3>Other</h3>
-          <a href="/recipes/sauces">Sauces</a>
+          <a href="/recipes/granola">Granola</a>
+          <a href="/recipes/sauces">Sauces & Dressings</a>
           <a href="/recipes/veggie-stock">Veggie Stock</a>
           <a href="/recipes/kombucha-bbq">Kombucha BBQ Sauce</a>
         </div>
         <div class="menu">
           <h3>Dessert</h3>
+          <a href="/recipes/coconut-sticky-rice">Coconut Sticky Rice</a>
           <a href="/recipes/black-sesame-cookies">Black Sesame Cookies</a>
         </div>
         <div class="menu">

@@ -23,6 +23,8 @@ import WheatBread from "./components/recipes/WheatBread.vue";
 import OilRice from "./components/recipes/OilRice.vue";
 import SesameCookies from "./components/recipes/SesameCookies.vue";
 import Kimchi from "./components/recipes/Kimchi.vue";
+import Granola from "./components/recipes/Granola.vue";
+import CoconutStickyRice from "./components/recipes/CoconutStickyRice.vue";
 
 export default createRouter({
   history: createWebHistory(),
@@ -118,6 +120,14 @@ export default createRouter({
     {
       path: "/recipes/kimchi",
       component: Kimchi,
+    },
+    {
+      path: "/recipes/granola",
+      component: Granola,
+    },
+    {
+      path: "/recipes/coconut-sticky-rice",
+      component: CoconutStickyRice,
     },
   ],
 });
