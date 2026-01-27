@@ -20,6 +20,7 @@ export default {
           <a href="/recipes/one-pot-pasta">One Pot Pasta</a>
           <a href="/recipes/mascarpone-gnocchi">Lemon Mascarpone Gnocchi</a>
           <a href="/recipes/glutinous-oil-rice">Glutinous Oil Rice</a>
+          <a href="/recipes/noodle-soup">Taiwanese Noodle Soup</a>
         </div>
         <div class="menu">
           <h3>Appetizers</h3>
@@ -27,6 +28,7 @@ export default {
           <a href="/recipes/onion-rings">Falafel Onion Rings</a>
           <a href="/recipes/vegan-buffalo-dip">Vegan Buffalo Dip</a>
           <a href="/recipes/coleslaw">Coleslaw</a>
+          <a href="/recipes/tea-egg">Tea Egg</a>
         </div>
         <div class="menu">
           <h3>Bread & Dough</h3>

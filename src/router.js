@@ -25,6 +25,8 @@ import SesameCookies from "./components/recipes/SesameCookies.vue";
 import Kimchi from "./components/recipes/Kimchi.vue";
 import Granola from "./components/recipes/Granola.vue";
 import CoconutStickyRice from "./components/recipes/CoconutStickyRice.vue";
+import NoodleSoup from "./components/recipes/NoodleSoup.vue";
+import TeaEgg from "./components/recipes/TeaEgg.vue";
 
 export default createRouter({
   history: createWebHistory(),
@@ -128,6 +130,14 @@ export default createRouter({
     {
       path: "/recipes/coconut-sticky-rice",
       component: CoconutStickyRice,
+    },
+    {
+      path: "/recipes/noodle-soup",
+      component: NoodleSoup,
+    },
+    {
+      path: "/recipes/tea-egg",
+      component: TeaEgg,
     },
   ],
 });
