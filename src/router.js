@@ -27,6 +27,7 @@ import Granola from "./components/recipes/Granola.vue";
 import CoconutStickyRice from "./components/recipes/CoconutStickyRice.vue";
 import NoodleSoup from "./components/recipes/NoodleSoup.vue";
 import TeaEgg from "./components/recipes/TeaEgg.vue";
+import MatchaBrownie from "./components/recipes/MatchaBrownie.vue";
 
 export default createRouter({
   history: createWebHistory(),
@@ -139,5 +140,9 @@ export default createRouter({
       path: "/recipes/tea-egg",
       component: TeaEgg,
     },
+    {
+      path: "/recipes/matcha-brownie",
+      component: MatchaBrownie,
+    }
   ],
 });

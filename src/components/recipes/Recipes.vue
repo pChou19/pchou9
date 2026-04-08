@@ -52,6 +52,7 @@ export default {
           <h3>Dessert</h3>
           <a href="/recipes/coconut-sticky-rice">Coconut Sticky Rice</a>
           <a href="/recipes/black-sesame-cookies">Black Sesame Cookies</a>
+          <a href="/recipes/matcha-brownie">Matcha Brownie</a>
         </div>
         <div class="menu">
           <h3>Info</h3>
