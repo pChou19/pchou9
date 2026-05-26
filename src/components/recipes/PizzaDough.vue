@@ -20,10 +20,10 @@ export default {
         <div class="recipe">
           <h3 class="sauces-header">Regular:</h3>
           <ul class="sauces">
-            <li>300g water (1 1/3 cups)</li>
-            <li>30g olive oil (2 tablespoons)</li>
+            <li>320g water (1 1/2 cups)</li>
+            <li>15g olive oil (1 tablespoons)</li>
             <li>7g yeast (2 teaspoons)</li>
-            <li>30g sugar (2 tablespoons)</li>
+            <li>15g sugar (1 tablespoons)</li>
             <li>500g flour (4 cups, can use mixure of AP & bread)</li>
             <li>15g salt (2 teaspoons)</li>
           </ul>
