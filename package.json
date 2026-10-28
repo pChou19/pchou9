@@ -1,6 +1,7 @@
 {
   "name": "pchou9",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "build": "vite build",
     "dev": "vite",
@@ -15,7 +16,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.8",
     "prettier": "^3.9.6",
-    "vite": "^8.1.5"
+    "vite": "^8.3.5"
   },
   "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
